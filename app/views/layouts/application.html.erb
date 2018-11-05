@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Gossip</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+    <nav id="header-color" class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="nav-bottom" class="nav-item nav-link active" <%= link_to 'Accueil', '/users/home' %> <span class="sr-only">(current)</span></a>
+          <a id="nav-bottom" class="nav-item nav-link active" <%= link_to 'Index', users_path %> <span class="sr-only">(current)</span></a>
+          <a id="nav-bottom" class="nav-item nav-link active" <%= link_to 'Créer ', new_user_path %> <span class="sr-only">(current)</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <a id="nav-bottom" class="nav-item nav-link active" <%= link_to 'Se connecter', registrations_path %> <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <%= yield %>
+  </body>
+</html>
