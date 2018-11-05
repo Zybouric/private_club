@@ -21,7 +21,7 @@
   <p> To see the final result go [https://powerful-wave-66614.herokuapp.com] 
 
 
-## ![Image of form](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjY-Ju-sL7eAhUJdxoKHd88At4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F549439223263496621%2F&psig=AOvVaw14SXD3F0SpLcW1OwWPYqjX&ust=1541545845070626)
+## ![Image of form](https://www.pinterest.com/pin/549439223263496621/)
 
   <h2>Team</h2>
 
