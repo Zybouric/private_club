@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/users/home/', to: 'users#home', as: 'home'
+  resources :sessions
   resources :registrations
   resources :users do 
   	resources :registrations
