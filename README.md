@@ -18,7 +18,8 @@
  <li>Do a rails server <code>rails server</code></li>
  
 </ol>
-  <p> To see the final result go [https://powerful-wave-66614.herokuapp.com] 
+  <p> To see the final result go [https://git.heroku.com/private-club-saphyr.git]
+  Le lien de l'app ne fonctionne pas il faut lancer a l'ancienne sur le localhost. trop fatiguee pour resoudre le probleme sorry  
 
 ## ![Image of form](https://www.wallpaperup.com/uploads/wallpapers/2014/05/21/355196/0affc9e9a2bd5b28212260bc560c0f25.jpg)
 
