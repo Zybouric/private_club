@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-#  before_action :set_session, only: [:new, :create, :destroy]
+#before_action :set_session, only: [:new, :create, :destroy]
 
   def new 
     render 'new'
@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       log_in user
-      redirect_to user
+      redirect_to user_path(user.id), success: 'You are now logged as #{@user.name}'
     else
      flash[:danger] = 'Invalid email/password combination'
       render :'new'
@@ -18,7 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out
-    redirect_to root_url
-
+    redirect_to users_path
   end
 end

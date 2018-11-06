@@ -1,4 +1,5 @@
 class RegistrationsController < ApplicationController
+before_action  :set_registration, only: [:show, :edit, :update, :destroy]
 
   def index
     @registrations = Registration.all
@@ -6,6 +7,7 @@ class RegistrationsController < ApplicationController
 
 
   def show
+      current_user
   end
 
   def new
@@ -13,6 +15,7 @@ class RegistrationsController < ApplicationController
   end
 
   def edit
+        @registration = Registration.new
   end
 
   def create
@@ -27,8 +30,6 @@ class RegistrationsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /registrations/1
-  # PATCH/PUT /registrations/1.json
   def update
     respond_to do |format|
       if @registration.update(registration_params)
@@ -39,8 +40,6 @@ class RegistrationsController < ApplicationController
     end
   end
 
-  # DELETE /registrations/1
-  # DELETE /registrations/1.json
   def destroy
     @registration.destroy
     respond_to do |format|
@@ -56,6 +55,6 @@ class RegistrationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def registration_params
-      params.require(:registration).permit(:first_name, :last_name, :email)
+      params.require(:registration).permit(:first_name, :last_name, :email, :password)
     end
 end
