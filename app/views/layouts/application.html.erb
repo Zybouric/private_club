@@ -23,7 +23,17 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <a id="nav-bottom" class="nav-item nav-link active" <%= link_to 'LogIn', new_session_path %> <span class="sr-only">(current)</span></a>
         </div>
-      </div>  
+      </div>
+          <% if logged_in? %>
+          <li><%= link_to "Users", '#' %></li>
+          <li><%= link_to "Profile", current_user %></li>
+          <li><%= link_to "Settings", '#' %></li>
+          <%= link_to "Log out", logout_path, method: :delete %>
+          <% else %>
+          <li><%= link_to "Log in", new_session_path %></li>
+        <% end %>
+
+  
     </nav>
   </header>
     <%= yield %>
