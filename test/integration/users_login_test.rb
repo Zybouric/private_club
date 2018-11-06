@@ -17,9 +17,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
   end
-  .
-  .
-  .
+  
   test "login with valid information" do
     get login_path
     post login_path, params: { session: { email:    @user.email,
@@ -32,7 +30,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", user_path(@user)
   end
 
-    .
+  
   test "valid signup information" do
     get signup_path
     assert_difference 'User.count', 1 do

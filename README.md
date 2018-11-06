@@ -20,7 +20,8 @@
 </ol>
   <p> To see the final result go [https://powerful-wave-66614.herokuapp.com] 
 
-## ![Image of form] (https://www.wallpaperup.com/355196/cat_meme_quote_funny_humor_grumpy_computer.html)
+## ![Image of form](https://www.wallpaperup.com/uploads/wallpapers/2014/05/21/355196/0affc9e9a2bd5b28212260bc560c0f25.jpg)
+
 
   <h2>Team</h2>
 
